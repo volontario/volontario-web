@@ -1,23 +1,68 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
+<div id="map"></div>
+    <div class="row">
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+      <div class="col s4 center">
+        <!-- Promo Content 1 goes here -->Its
+      </div>
+      <div class="col s4 center">
+        <!-- Promo Content 2 goes here -->coming
+      </div>
+      <div class="col s4 center">
+        <!-- Promo Content 3 goes here -->soon!
+      </div>
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
+    </div>
+<div class="section contact-form">
+  <div class="container">
 
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+      
+
+      <form ng-if="!contactFormSent"
+        accept-charset="UTF-8" enctype="multipart/form-data" method="post" 
+
+        ng-submit="submitContactForm(contactform)"
+      >
+
+        <h2>Lähetä meille <i class="color-secondary ion-android-favorite-outline"></i> viesti</h2>
+
+
+        <div class="form-group">
+        <label for="Field3">
+          <span>Viesti</span>
+          <textarea 
+          placeholder="Mistä haluaisit kertoa?"
+          id="Field3"
+          name="Field3"
+          ng-model="contactform.Field3"
+          class="form-control input-lg"
+          spellcheck="true"
+          required
+          rows="1" cols="50"
+          ></textarea>
+        </label>
+        </div>
+
+        <div class="form-group">
+        <label class="desc" for="Field2">
+          <span>Terveisin</span>
+          <input id="Field2" name="Field2" required ng-model="contactform.Field2" placeholder="sähköpostisi" type="email" class="form-control input-lg" />
+        </label>
+        </div>
+
+        <input type="hidden" id="idstamp" name="idstamp"  ng-model="contactform.idstamp" value="Pj1/hdF6obSYiU0RR34qIhzPK2hvJOV7qdbJYzJUyCE=" />
+
+        <button ng-if="!sendingForm" class="big btn btn-lg btn-primary btn-huge" ng-click="contactFormSent=!contactFormSent" type="submit">Lähetä</button>
+
+        <loader ng-if="sendingForm"></loader>
+        <!-- <textarea name="comment" id="comment" rows="1" cols="1"></textarea> -->
+    </form>
+
+
+    <div ng-if="contactFormSent">
+      <h2 ng-show="!contactFormSentError">Viesti lähetetty<i class="ion-android-done-all color-secondary"></i></h2>
+      <h2 ng-show="contactFormSentError">Ongelma lähetyksessä <i class="ion-android-cancel text-danger"></i></h2>
+    </div>
+         
+  </div>
+
 </div>

@@ -1,4 +1,5 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
@@ -89,3 +90,32 @@ body {
     border-bottom: 0;
   }
 }
+
+//contact form
+
+.contact-form {
+  .container {
+    max-width: 660px;
+  }
+  h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  .form-group {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  textarea {margin-top:20px; display:block;}
+  label {
+    display:block;
+    span {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+}
+// map
+
+#map {height:400px; width:100%;}
