@@ -1,68 +1,121 @@
-<div id="map"></div>
-    <div class="row">
-
-      <div class="col s4 center">
-        <!-- Promo Content 1 goes here -->Its
-      </div>
-      <div class="col s4 center">
-        <!-- Promo Content 2 goes here -->coming
-      </div>
-      <div class="col s4 center">
-        <!-- Promo Content 3 goes here -->soon!
-      </div>
-
-    </div>
-<div class="section contact-form">
-  <div class="container">
-
-      
-
-      <form ng-if="!contactFormSent"
-        accept-charset="UTF-8" enctype="multipart/form-data" method="post" 
-
-        ng-submit="submitContactForm(contactform)"
-      >
-
-        <h2>Lähetä meille <i class="color-secondary ion-android-favorite-outline"></i> viesti</h2>
-
-
-        <div class="form-group">
-        <label for="Field3">
-          <span>Viesti</span>
-          <textarea 
-          placeholder="Mistä haluaisit kertoa?"
-          id="Field3"
-          name="Field3"
-          ng-model="contactform.Field3"
-          class="form-control input-lg"
-          spellcheck="true"
-          required
-          rows="1" cols="50"
-          ></textarea>
-        </label>
+<div id="wrap" class="wrap">
+        <div class="mockup">
+          <img class="mockup__img" src="images/mockup.jpg" />
+          <div id="mobile" class="mobile">
+            <ul id="slideshow" class="slideshow">
+              <li class="slideshow__item"><img src="images/small/1.png" /></li>
+              <li class="slideshow__item"><img src="images/small/2.png" /></li>
+              <li class="slideshow__item"><img src="images/small/3.png" /></li>
+              <li class="slideshow__item"><img src="images/small/4.png" /></li>
+            </ul>
+          </div>
+          <header class="codrops-header">
+            <h1><span>Volontario</span><i>Entä jos auttaminen olisikin helppoa?</i></h1>
+          </header>
         </div>
+      </div>
+      <div class="content">
+           <div class="row">
+           <br>
 
-        <div class="form-group">
-        <label class="desc" for="Field2">
-          <span>Terveisin</span>
-          <input id="Field2" name="Field2" required ng-model="contactform.Field2" placeholder="sähköpostisi" type="email" class="form-control input-lg" />
-        </label>
+                <div class="col s4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis orci accumsan purus pulvinar, non dapibus magna congue. Maecenas elit felis, rhoncus convallis lorem nec, pretium viverra velit. Donec mattis egestas ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur vulputate erat in quam dignissim ultricies. Phasellus et enim vulputate, aliquam nibh eu, lobortis leo. Suspendisse at velit ac nisl rhoncus scelerisque. Cras consectetur fermentum felis, quis aliquam neque ornare in.
+                  <!-- Promo Content 1 goes here -->
+                </div>
+                <div class="col s4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis orci accumsan purus pulvinar, non dapibus magna congue. Maecenas elit felis, rhoncus convallis lorem nec, pretium viverra velit. Donec mattis egestas ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur vulputate erat in quam dignissim ultricies. Phasellus et enim vulputate, aliquam nibh eu, lobortis leo. Suspendisse at velit ac nisl rhoncus scelerisque. Cras consectetur fermentum felis, quis aliquam neque ornare in. 
+                  <!-- Promo Content 2 goes here -->
+                </div>
+                <div class="col s4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis orci accumsan purus pulvinar, non dapibus magna congue. Maecenas elit felis, rhoncus convallis lorem nec, pretium viverra velit. Donec mattis egestas ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur vulputate erat in quam dignissim ultricies. Phasellus et enim vulputate, aliquam nibh eu, lobortis leo. Suspendisse at velit ac nisl rhoncus scelerisque. Cras consectetur fermentum felis, quis aliquam neque ornare in.
+                  <!-- Promo Content 3 goes here -->
+                </div>
+                <!-- Promo Content 1 goes here -->
+              </div>
+            </div>
+          
+        <div class="grid">
+          <figure class="effect-milo">
+            <img src="images/33.jpg" alt="img12"/>
+            <figcaption>
+              <div>
+                <h2>Haluatko <span>auttaa?</span></h2>
+                <p>Lily likes to play with crayons and pencils</p>
+              </div>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
+          <figure class="effect-milo">
+            <img src="images/16.jpg" alt="img12"/>
+            <figcaption>
+              <div>
+                <h2>Tarvitsetko <span>auttajaa?</span></h2>
+                <p>Lily likes to play with crayons and pencils</p>
+              </div>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
         </div>
-
-        <input type="hidden" id="idstamp" name="idstamp"  ng-model="contactform.idstamp" value="Pj1/hdF6obSYiU0RR34qIhzPK2hvJOV7qdbJYzJUyCE=" />
-
-        <button ng-if="!sendingForm" class="big btn btn-lg btn-primary btn-huge" ng-click="contactFormSent=!contactFormSent" type="submit">Lähetä</button>
-
-        <loader ng-if="sendingForm"></loader>
-        <!-- <textarea name="comment" id="comment" rows="1" cols="1"></textarea> -->
-    </form>
-
-
-    <div ng-if="contactFormSent">
-      <h2 ng-show="!contactFormSentError">Viesti lähetetty<i class="ion-android-done-all color-secondary"></i></h2>
-      <h2 ng-show="contactFormSentError">Ongelma lähetyksessä <i class="ion-android-cancel text-danger"></i></h2>
+        <div class="grid">
+          <figure class="effect-milo">
+            <img src="images/33.jpg" alt="img12"/>
+            <figcaption>
+              <div>
+                <h2>Haluatko <span>auttaa?</span></h2>
+                <p>Lily likes to play with crayons and pencils</p>
+              </div>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
+          <figure class="effect-milo">
+            <img src="images/16.jpg" alt="img12"/>
+            <figcaption>
+              <div>
+                <h2>Tarvitsetko <span>auttajaa?</span></h2>
+                <p>Lily likes to play with crayons and pencils</p>
+              </div>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
+        </div>
     </div>
-         
-  </div>
+    <!-- /container -->
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      (function() {
+        new Slideshow( document.getElementById( 'slideshow' ) );
 
-</div>
+        /* Mockup responsiveness */
+        var body = docElem = window.document.documentElement,
+          wrap = document.getElementById( 'wrap' ),
+          mockup = wrap.querySelector( '.mockup' ),
+          mockupWidth = mockup.offsetWidth;
+
+        scaleMockup();
+
+        function scaleMockup() {
+          var wrapWidth = wrap.offsetWidth,
+            val = wrapWidth / mockupWidth;
+
+          mockup.style.transform = 'scale3d(' + val + ', ' + val + ', 1)';
+        }
+        
+        window.addEventListener( 'resize', resizeHandler );
+
+        function resizeHandler() {
+          function delayed() {
+            resize();
+            resizeTimeout = null;
+          }
+          if ( typeof resizeTimeout != 'undefined' ) {
+            clearTimeout( resizeTimeout );
+          }
+          resizeTimeout = setTimeout( delayed, 50 );
+        }
+
+        function resize() {
+          scaleMockup();
+        }
+      })();
+    </script>

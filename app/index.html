@@ -13,6 +13,10 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/mockup1.css" />
+    <script src="js/modernizr.custom.js"></script>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- endbuild -->
   </head>
@@ -22,34 +26,10 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-       <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Volontario</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="">Mitä?</a></li>
-            <li><a href="">Ketkä?</a></li>
-          </ul>
-        </div>
-      </nav>   
-    </div>
+
 
     <div ng-view=""></div>
 
-   <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Volontar.io</h5>
-
-        </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Ask and we shall tell.
-      </div>
-    </div>
-  </footer>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -75,8 +55,6 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/Materialize/dist/js/materialize.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
-    <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -84,8 +62,6 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/factories/categories.js"></script>
-
         <!-- endbuild -->
 </body>
 </html>
