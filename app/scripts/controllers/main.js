@@ -10,7 +10,4 @@
 angular.module('volontarioWebApp')
   .controller('MainCtrl', function () {
 
-
- 
-
   });
