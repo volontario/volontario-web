@@ -1,6 +1,10 @@
 {
-  "name": "volontarioweb",
+  "name": "volontario-web",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/volontario/volontario-web"
+  },
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
     "grunt": "^0.4.5",
